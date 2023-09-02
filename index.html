@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="header">        
+          <h1>Камень Ножницы Бумага</h1> 
+    </div>
+    <div class="content">
+      <h2>Сделайте свой выбор</h2>
+      <a id="point">Первый, кто наберет 5 очков, побеждает в игре</a>
+      <!-- <a>Поле с воводом кто победил в этом раунде</a> -->
+      <div id="playingField">
+        <div id="player">
+            <a id="playerAnswer">❔</a>
+            <a id="playerScore">игрок:</a>
+        </div>
+        <div id="computer">
+            <a id="computerAnswer">❔</a>
+            <a id="computerScore">компьютер:</a>
+        </div>  
+      </div>
+      
+      
+      <div id="choice" >
+        <button id="rockBtn">
+          <div>✊</div>
+        </button>
+        <button id="scissorsBtn">
+          <div>✌</div>
+        </button>
+        <button id="paperBtn">
+          <div>✋</div>
+        </button>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <a id="whoWinner"></a>
+          <a>Хотите начать с начала?</a>
+          <button id="restart">Играть сново</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Правила игры "Камень Ножницы Бумага":</h2>
+      <p>Есть два участника.Но в нашем случае это вы и компьюрет.<p>
+        <a>Перед вами 3 картинки:</a>
+        <ul class="card">
+          <li>✊<div class="name">Камень</div></li>
+          <li>✌ <div class="name">Ножницы</div></li>
+          <li>✋<div class="name">Бумага</div></li>
+        </ul>
+        <a>Игрок и комрьютер делают выбор. После определяется победитеть в рауде.</a>
+        <a>Есть несколько вариантов победы в ранде:</a>
+        <ul>
+            <li>Когда один игрок показал камень✊ и другой бумагу✋, то победа достаеться игроку показавшему бумагу✋, так как бумага✋ кроет камень✊</li>
+            <li>Когда один игрок показал камень✊ и другой ножницы✌, то победа достаеться игроку показавшему камень✊, так как камень✊ ломает ножницы</li>
+            <li>Когда один игрок показал бумаг✋ и другой ножницы✌, то победа достаеться игроку показавшему ножницы✌, так как ножницы✌ режут бумагу✋</li>
+        </ul>
+        <a>Вот все основные правила игры "Камень Ножницы Бумага"</a>
+        <a class="advice">Хорошей игры. И помните - "Играйте, но не заигрывайтесь!"</a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
